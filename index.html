@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Boboy's Fruits and Vegetables</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+    <link rel="shortcut icon" href="images/logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+<body>
+    <header class="header">
+
+        <a href="index.html" class="logo"><i class="fa-solid fa-shop"></i>Boboy's Online Market</a>
+
+        <!--THE NAVBAR ON THE CENTER-->
+
+        <nav class="navbar">
+            <a href="#home">Home</a>
+            <a href="#products">Products</a>
+            <a href="#categories">Categories</a>
+            <a href="#about-us">About us</a>
+        </nav>
+
+        <!--ICONS ON THE RIGHT SIDE-->
+
+        <div class="icons">
+            <div class="fas fa-bars" id="menu-btn"></div>
+            <div class="fas fa-search" id="search-btn"></div>
+            <div class="fas fa-shopping-cart" id="cart-btn"><span id="itemCounter">0</span></div>
+            <div class="fas fa-user" id="login-btn"></div>
+        </div>
+
+        <!--SEARCH BAR-->
+
+        <form action="" class="search-form">
+            <input type="search" id="search-box" placeholder="search">
+            <label for="search-box" class="fas fa-search"></label>
+        </form>
+
+        <div class="shopping-cart">
+            <h1 class="heading"><i class="fas fa-shopping-cart"></i>Shopping Cart</h1>
+            
+        </div>
+
+        <!--ACCOUNT | LOGIN - SIGNUP SECTION-->
+
+        <form action="" class="form">
+            <i class="fa fa-users" aria-hidden="true"><span>ACCOUNT</span></i>
+            <button type="button" id="show-login">LOGIN</button>
+            <button type="button" id="show-signup">SIGN UP</button>
+        </form>
+
+    </header>
+
+    <!--HOMEPAGE BACKGROUND PICTURE-->
+
+    <section class="home" id="home">
+        <div class="carousel">
+            <div class="carousel_item carousel_item--visible">
+                <img src="images/slider-1.jpg">
+            </div>
+               <button id="carousel_button--prev"></button>
+                <button id="carousel_button--next"></button>
+            </div>
+        </div>
+    </section>
+
+    <!--LOGIN POP UP-->
+
+    <div class="popup">
+        <div class="close-btn">&times;</div>
+           <div class="box">
+            <form action="" class="login-form">
+                <h1>LOG IN</h1>
+                <input class="input" type="text" name="username" id="" placeholder="Username">
+                <input class="input" type="password" name="password" id="" placeholder="Password">
+                <button>LOGIN</button>
+                <p>Forgot password? <a href="forgot-pass.html">Click here</a></p>
+            </form>
+           </div>
+    </div>
+
+    <!--SIGNUP POPUP-->
+
+    <div class="popup2">
+        <div class="close-btn">&times;</div>
+            <div class="box2">
+                <form action="" class="signup-form">
+                    <h1>SIGN UP</h1>
+                <div class="name">   
+                    <input type="text" name="fName" id="" placeholder="First Name" required>
+                    <input type="text" name="lName" id="" placeholder="Last Name" required>
+                </div>
+                    <input class="input" type="text" name="username" id="" placeholder="Username" required>
+                    <input type="email" name="email" id="" placeholder="Email" required>
+                    <input class="input" type="password" name="password" id="" placeholder="Password" required>
+                    <button type="submit">Create Account</button>
+                </form>
+                
+            </div>
+    </div>
+
+
+    <!--PRODUCTS SECTION-->
+
+    <section class="products" id="products">
+
+        <h1 class="heading">Recommend <span>products</span> </h1>
+
+        <div class="swiper product-slider">
+
+            <div class="swiper-wrapper">
+
+                <a href="./products/ampalaya.html">
+                    <div class="swiper-slide box">
+                        <img src="images/product-ampalaya.png" alt="">
+                        <h3>Ampalaya</h3>
+                        <div class="price"> ₱100 per kilo </div>
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                        </div>
+                        <a href="#" class="btn">Add to Cart</a>
+                    </div>
+                </a>
+
+                <a href="./products/reployo.html">
+                    <div class="swiper-slide box">
+                        <img src="images/product2-repolyo.png" alt="">
+                        <h3>Repolyo</h3>
+                        <div class="price"> ₱120 per kilo </div>
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                        </div>
+                        <a href="#" class="btn">add to cart</a>
+                    </div>
+                </a>
+
+                <a href="./products/sayote.html">
+                    <div class="swiper-slide box">
+                        <img src="images/product3-sayote.png" alt="">
+                        <h3>Sayote</h3>
+                        <div class="price"> ₱80 per kilo </div>
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                        </div>
+                        <a href="#" class="btn">add to cart</a>
+                    </div>
+                </a>
+
+                <a href="./products/talong.html">
+                    <div class="swiper-slide box">
+                        <img src="images/product4-talong.png" alt="">
+                        <h3>Talong</h3>
+                        <div class="price"> ₱110 per kilo </div>
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                        </div>
+                        <a href="#" class="btn">add to cart</a>
+                    </div>
+                </a>
+                
+            </div>
+        </div>
+
+        <div class="swiper product-slider">
+
+            <div class="swiper-wrapper">
+
+                <a href="./products/sitaw.html">
+                    <div class="swiper-slide box">
+                        <img src="images/product5-sitaw.png" alt="">
+                        <h3>Sitaw</h3>
+                        <div class="price"> ₱50 per bugkos </div>
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                        </div>
+                        <a href="#" class="btn">add to cart</a>
+                    </div>
+                </a>
+
+                <a href="./products/okra.html">
+                    <div class="swiper-slide box">
+                        <img src="images/product6-okra.png" alt="">
+                        <h3>Okra</h3>
+                        <div class="price"> ₱15 per bugkos </div>
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                        </div>
+                        <a href="#" class="btn">add to cart</a>
+                    </div>
+                </a>
+
+                <a href="./products/patola.html">
+                    <div class="swiper-slide box">
+                        <img src="images/product7-patola.png" alt="">
+                        <h3>Patola</h3>
+                        <div class="price"> ₱60 per kilo </div>
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                        </div>
+                        <a href="#" class="btn">add to cart</a>
+                    </div>
+                </a>
+                
+                <a href="./products/kalabasa.html">
+                    <div class="swiper-slide box">
+                        <img src="images/product8-kalabasa.png" alt="">
+                        <h3>Kalabasa</h3>
+                        <div class="price"> ₱120 per kilo </div>
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                        </div>
+                        <a href="#" class="btn">add to cart</a>
+                    </div>
+                </a>
+                
+            </div>
+        </div>
+    </section>
+
+    <!--CATEGORIES | VEGETABLES & FRUIT SECTION-->
+
+    <section class="categories" id="categories">
+        <h1 class="heading">product <span>categories</span></h1>
+        <div class="box-container">
+            <div class="box">
+                <img src="images/organic-vegies.png">
+                <h3>Vegetables Categories</h3>
+                <a href="vegetable.html" class="btn">shop now</a>
+            </div>
+
+            <div class="box">
+                <img src="images/fresh-fruits.png">
+                <h3>Fruits Categories</h3>
+                <a href="#" class="btn">Shop now</a>
+            </div>
+
+        </div>
+    </section>
+
+    <!--ABOUT US SECTION-->
+
+    <section class="about-us" id="about-us">
+        <h1 class="heading">About <span>us</span></h1>
+        <div class="box-container">
+            <h2>Boboy's Fruits and Vegetables</h2>
+            <p>Welcome to Boboy's Fruits and Vegetables, your online gateway to the freshest produce Catanduanes has to offer. We're a passionate team dedicated to bringing the vibrant flavors of our island directly to your kitchen. Our online market, conveniently located in District One, Gigmoto, Catanduanes, is your source for hand-selected fruits and vegetables, sourced directly from local farmers. We pride ourselves on offering the highest quality produce, ensuring every item is ripe, flavorful, and bursting with freshness.
+                <br><br>At Boboy's, we believe in more than just delivering delicious food. We're committed to supporting our local community and promoting sustainable agriculture practices. By choosing Boboy's, you're not only enjoying the freshest produce, but also contributing to a thriving local economy and a healthier environment.</p>
+        </div>
+    </section>
+
+    <!--FOOTER-->
+
+    <section class="footer">
+        <div class="box-container">
+            <div class="box">
+                <h3>Boboy's Fruits & Vegetables<i class="fa-solid fa-shop"></i></h3>
+                <p>©Boboy's Online Shop</p>
+                <div class="share">
+                    <a href="#" class="fab fa-facebook-f"></a>
+                    <a href="#" class="fab fa-twitter"></a>
+                    <a href="#" class="fab fa-instagram"></a>
+                    <a href="#" class="fab fa-linkedin"></a>
+                </div>
+            </div>
+
+            <div class="box">
+                <h3>contact info</h3>
+                <a href="#" class="links"><i class="fas fa-phone"></i>+639302641807</a>
+                <a href="#" class="links"><i class="fas fa-envelope"></i>emytimuat123@gmail.com</a>
+                <a href="#" class="links"><i class="fas fa-map-marker-alt"> virac</i>emytimuat123@gmail.com</a>
+            </div>
+
+            <div class="box">
+                <h3>quick links</h3>
+                <a href="#home" class="links"><i class="fas fa-arrow-right"></i>home</a>
+                <a href="#products" class="links"><i class="fas fa-arrow-right"></i>products</a>
+                <a href="#categories" class="links"><i class="fas fa-arrow-right"></i>categories</a>
+                <a href="#about-us" class="links"><i class="fas fa-arrow-right"></i>about us</a>
+            </div>
+
+
+            <div class="box">
+                <h3>newsletter</h3>
+                <p>subscribe for latest updates</p>
+                <input type="email" placeholder="please enter your emal" class="email">
+                <input type="submit" value="subscribe" class="btn">
+            </div>
+
+        </div>
+    </section>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+
+    <script src="js/script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,711 @@
+/*======================BASE STYLE======================*/
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600&display=swap');
+
+:root {
+    --orange: #ef9e06;
+    --black: #130f40;
+    --white: #fff;
+    --green: #789527;
+    --light-color: #666;
+    --box-shadow: 0 0.5rem 1.5rem rgba(0, 0, 0, 0.1);
+    --border: 0.2rem solid rgba(0, 0, 0, 0.1);
+    --outline: 0.1rem solid rgba(0, 0, 0, 0.1);
+    --outline-hover: 0.2rem solid var(--black);
+}
+
+* {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    text-decoration: none;
+    transition: all 0.2s linear;
+}
+
+html {
+    font-size: 62.5%;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+    scroll-padding-top: 7rem;
+    height: 100%;
+    scroll-behavior: smooth
+}
+
+body {
+    background: #eee;
+    height: 100%;
+    scroll-behavior: smooth
+}
+
+
+.btn {
+    margin-top: 1rem;
+    display: inline-block;
+    padding: 0.8rem 3rem;
+    font-size: 1.7rem;
+    border-radius: 0.5rem;
+    border: 0.2rem solid var(--orange);
+    color: var(--black);
+    cursor: pointer;
+    background: none;
+}
+
+.btn:hover {
+    background: var(--orange);
+    color: #fff
+}
+
+.btn-form {
+    margin-top: 1rem;
+    display: inline-block;
+    padding: 0.2rem 3rem;
+    font-size: 1.7rem;
+    border: 0.2rem solid var(--orange);
+    border-radius: 8px;
+    color: var(--black);
+    cursor: pointer;
+    background: none;
+}
+
+.btn-form:hover {
+    background: var(--orange);
+    color: #fff;  
+}
+
+/*======================HEADER======================*/
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2rem 9%;
+    box-shadow: var(--box-shadow);
+    background: #789527;
+
+}
+
+.header .logo {
+    font-size: 2.5rem;
+    font-weight: bolder;
+    color: var(--white);
+    text-decoration: none;
+}
+
+.header .logo i {
+    color: var(--orange);
+}
+
+.header .navbar a {
+    font-size: 1.7rem;
+    margin: 0 1rem;
+    color: var(--white);
+    font-weight: bolder;
+    text-decoration: none;
+}
+
+.header .navbar a:hover {
+    color: var(--black);
+
+}
+
+.header .icons div {
+    height: 4.5rem;
+    width: 4.5rem;
+    line-height: 4.5rem;
+    border-radius: 0.5rem;
+    background: #eee;
+    color: var(--black);
+    font-size: 2rem;
+    margin-left: 0.3rem;
+    cursor: pointer;
+    text-align: center;
+}
+
+.header .icons div:hover {
+    background: var(--orange);
+    color: #fff;
+}
+
+#menu-btn {
+    display: none;
+}
+
+.header .search-form {
+    position: absolute;
+    top: 110%;
+    right: -110%;
+    width: 55rem;
+    height: 5rem;
+    background: #fff;
+    border: solid var(--light-color) 1px;
+    border-radius: 0.5rem;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    box-shadow: var(--box-shadow);
+}
+
+.header .search-form.active {
+    right: 43.7rem;
+    transition: 0.3s linear;
+}
+
+.header .search-form input {
+    height: 100%;
+    width: 100%;
+    background: none;
+    text-transform: none;
+    font-size: 1.6rem;
+    color: var(--black);
+    padding: 0 1.5rem;
+}
+
+.header .search-form label {
+    font-size: 2.2rem;
+    padding-right: 1.5rem;
+    color: var(--black);
+    cursor: pointer;
+}
+
+.header .search-form label:hover {
+    color: var(--orange);
+}
+
+.header .shopping-cart {
+    position: absolute;
+    top: 110%;
+    right: -110%;
+    padding: 1rem;
+    border-radius: 0.5rem;
+    border: solid var(--light-color) 1px;
+    box-shadow: var(--box-shadow);
+    width: 35rem;
+    background: var(--white);
+}
+
+.header .shopping-cart img {
+    border-radius: 10px;
+}
+
+.header .shopping-cart.active {
+    right: 2rem;
+    transition: 0.4s linear;
+}
+
+.header .shopping-cart .box {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    position: relative;
+    margin: 1rem 0;
+
+}
+
+.header .shopping-cart .box img {
+    height: 10rem;
+
+}
+
+.header .shopping-cart .box .fa-trash {
+    font-size: 2rem;
+    position: absolute;
+    top: 50%;
+    right: 2rem;
+    cursor: pointer;
+    color: var(--black);
+    transform: translateY(-50%);
+}
+
+.header .shopping-cart .box .fa-trash:hover {
+    color: var(--orange);
+}
+
+.header .shopping-cart .box .content h3 {
+    color: var(--white);
+    font-size: 1.7rem;
+    padding-bottom: 1rem;
+}
+
+.header .shopping-cart .box .content span {
+    color: white;
+    font-size: 1.6rem;
+}
+
+.header .shopping-cart .box .content .items {
+    padding-left: 1rem;
+}
+
+.header .shopping-cart .total {
+    font-size: 2.5rem;
+    padding: 1rem 0;
+    text-align: center;
+    color: var(--black);
+}
+
+.header .shopping-cart .btn {
+    display: block;
+    text-align: center;
+    margin: 1rem;
+}
+
+.header .form {
+    position: absolute;
+    top: 110%;
+    right: -110%;
+    width: 30rem;
+    box-shadow: var(--box-shadow);
+    padding: 2rem;
+    border: solid black .5px;
+    border-radius: 0.5rem;
+    background: var(--white);
+    text-align: center;
+}
+
+.header .form.active {
+    right: 2rem;
+    transition: 0.4s linear;
+}
+
+.header .form a {
+    display: block;
+    margin: 0 auto;
+    font-size: 27px;
+    color: var(--black);
+    margin-bottom: 10px;
+}
+
+.header .form i {
+    color: var(--orange);
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+.header .form span {
+    color: var(--black);
+}
+
+/* BODY */
+
+body {
+    font-family: sans-serif;
+    margin: 0;
+}
+
+.container {
+    display: flex;
+    border: solid var(--light-color) .5px;
+    margin: auto;
+    margin-top: 8%;
+    border-radius: .5rem;
+    gap: 2.5rem;
+    background-color: #fff;
+    outline: var(--outline);
+    outline-offset: -1rem;
+    width: 68.5%;
+}
+
+.product-image {
+    width: 300px;
+    height: 300px;
+    margin-right: 20px;
+    margin-left: 50px;
+}
+
+.product-details {
+    flex: 2;
+}
+
+.product-name {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    font-size: 2.5rem;
+    line-height: 1.8;
+    color: var(--black);
+}
+
+.product-description {
+    margin-bottom: 10px;
+}
+
+.product-price {
+    font-size: 20px;
+    font-weight: bold;
+    color: #EE4D2D;
+    margin-bottom: 10px;
+}
+
+.product-discount {
+    font-size: 16px;
+    color: #dc3545;
+    margin-bottom: 10px;
+}
+
+.quantity-container {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    font-size: medium;
+}
+
+.quantity-label {
+    margin-right: 10px;
+}
+
+.quantity-input {
+    width: 50px;
+    text-align: center;
+}
+
+.buttons {
+    margin-top: 20px;
+}
+
+.button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-right: 10px;
+}
+
+.add-to-cart {
+    margin-top: 1rem;
+    display: inline-block;
+    padding: 0.8rem 3rem;
+    font-size: 1.7rem;
+    border-radius: 0.5rem;
+    border: 0.2rem solid var(--orange);
+    color: var(--black);
+    cursor: pointer;
+    background: none;
+    margin-bottom: 10px;
+}
+
+.add-to-cart:hover {
+    color: var(--orange);
+    background-color: #fff;
+}
+
+.buy-now {
+    margin-top: 1rem;
+    display: inline-block;
+    padding: 0.8rem 3rem;
+    font-size: 1.7rem;
+    border-radius: 0.5rem;
+    border: 0.2rem solid var(--orange);
+    color: var(--black);
+    cursor: pointer;
+    background: none;
+    margin-bottom: 10px;
+}
+
+.buy-now:hover {
+    color: var(--orange);
+    background-color: #fff;
+}
+
+.variations {
+    margin-top: 20px;
+}
+
+.variation {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.variation-color {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.variation-image {
+    width: 50px;
+    height: 50px;
+}
+
+.product-name span {
+    color: var(--orange);
+}
+
+/* --------- PRODUCTS --------- */
+
+.selection {
+    width: 70%;
+    margin: auto;
+    margin-bottom: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.selection .product-selection h1 {
+    font-size: 30px;
+    text-align: center;
+    margin-bottom: 10px;
+    margin-top: 5px;
+}
+
+.selection .product-selection span {
+    color: var(--orange);
+}
+
+.selection .product-selection {
+    padding: 1rem;
+}
+
+.selection .product-selection .box {
+    border: solid var(--light-color) .5px;
+    display: inline-block;
+    background: #fff;
+    text-align: center;
+    border-radius: .5rem;
+    padding: 3rem 2rem;
+    outline-offset: -1rem;
+    outline: var(--outline);
+    box-shadow: var(--box-shadow);
+    width: 33.1%;
+}
+
+
+.selection .product-selection .box .price {
+    font-size: 1.5rem;
+    color: var(--light-color);
+}
+
+.selection .product-selection .box .stars i {
+    font-size: 1.5rem;
+    color: var(--orange);
+    padding: .5rem 0;
+}
+
+.selection img {
+    width: 50%;
+}
+
+#sayote {
+    width: 66.7%;
+}
+
+#okra {
+    width: 66.7%;
+}
+
+#patola {
+    width: 55.4%;
+}
+
+#kalabasa {
+    width: 100%;
+}
+
+#sitaw {
+    width: 88%;
+}
+
+
+@media(max-width: 991px) {
+    html {
+        font-size: 55%;
+    }
+
+    .header {
+        padding: 2rem;
+    }
+
+    .header .search-form {
+        width: 50%;
+    }
+
+    .header .search-form.active {
+        right: 2rem;
+    }
+
+    .container {
+        flex-direction: column;
+        margin-top: 10%;
+        width: 90%;
+        margin-left: 5%;
+    }
+
+    .product-image {
+        width: 80%;
+        height: auto;
+        margin: auto;
+    }
+
+    .product-details {
+        width: 100%;
+        text-align: center;
+    }
+
+    .product-name {
+        font-size: 2rem;
+    }
+
+    .product-description {
+        font-size: 1.4rem;
+    }
+
+    .product-price {
+        font-size: 1.6rem;
+    }
+
+    .product-discount {
+        font-size: 1.2rem;
+    }
+
+    .quantity-container {
+        margin: 10px auto;
+    }
+
+    .quantity-label {
+        margin-left: 40%;
+    }
+
+    .quantity-input {
+        width: 45px;
+    }
+
+    .buttons {
+        margin: 20px auto;
+    }
+
+    .button {
+        padding: 8px 16px;
+        font-size: 1.4rem;
+        margin: 0 5px;
+    }
+
+    .selection .product-selection {
+        padding: 1rem;
+        display: block;
+        width: 100%;
+    }
+
+    .selection .product-selection .box {
+        width: 100%;
+        margin: 10px auto;
+    }
+
+    #sayote,
+    #okra,
+    #patola,
+    #kalabasa {
+        width: 100%;
+    }
+
+    .footer {
+        height: 100px;
+    }
+}
+
+@media(max-width: 768px) {
+    #menu-btn {
+        display: inline-block;
+    }
+
+    .header .navbar {
+        position: absolute;
+        top: 110%;
+        right: -110%;
+        width: 90%;
+    }
+
+    .header .navbar a {
+        font-size: 1.6rem;
+        padding: 1rem 0;
+    }
+}
+
+/* ============FOOTER=================*/
+
+.footer {
+    background: var(--green);
+    height: 38%;
+
+}
+
+.footer .box-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+    gap: 1.5rem;
+    margin-left: 7px;
+    margin-right: 7px;
+}
+
+.footer .box-container .box h3 {
+    font-size: 2.5rem;
+    color: var(--black);
+    text-transform: capitalize;
+    padding: 1rem 0;
+}
+
+.footer .box-container .box h3 i {
+    color: var(--orange);
+}
+
+.footer .box-container .box .links {
+    display: block;
+    font-size: 1.5rem;
+    color: var(--black);
+    padding: 1rem 0;
+}
+
+.footer .box-container .box .links i {
+    color: var(--orange);
+    padding-right: 0.5rem;
+}
+
+.footer .box-container .box .links:hover i {
+    padding-right: 2rem;
+}
+
+.footer .box-container .box p {
+    line-height: 1.8;
+    font-size: 1.5rem;
+    color: var(--black);
+    padding: 1rem 0;
+}
+
+.footer .box-container .box .follow a {
+    display: flex;
+    margin-bottom: 5px;
+    color: var(--orange);
+    font-size: large;
+    font-style: normal;
+}
+
+.footer .box-container .box .follow i span {
+    color: var(--black);
+}
+
+.footer .box-container .box .email {
+    width: 80%;
+    margin: 0.7rem 0;
+    padding: 1rem;
+    border-radius: 0.5rem;
+    background: #fff;
+    font-size: 1.6rem;
+    color: var(--black);
+    text-transform: none;
+}
+
+.footer .box-container .box .btn {
+    background: var(--orange);
+}
+
+.footer .box-container .box .ph-img {
+    margin-top: 2rem;
+    height: 3rem;
+}

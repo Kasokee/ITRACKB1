@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Boboy's Fruits and Vegetables | Ampalaya</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <link rel="shortcut icon" href="../images/logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="../css/gulay.css">
+</head>
+<body>
+    <header class="header">
+
+        <a href="../index.html" class="logo"><i class="fa-solid fa-shop"></i>Boboy's Online Shop</a>
+
+        <div class="icons">
+            <div class="fas fa-bars" id="menu-btn"></div>
+            <div class="fas fa-search" id="search-btn"></div>
+            <div class="fas fa-shopping-cart" id="cart-btn"></div>
+            <div class="fas fa-user" id="login-btn"></div>
+        </div>
+
+        <form action="" class="search-form">
+            <input type="search" id="search-box" placeholder="search">
+            <label for="search-box" class="fas fa-search"></label>
+        </form>
+
+        <div class="shopping-cart">
+            <i class="fas fa-trash"></i>
+				<img src="${productImage}">
+				<div class="content">
+					<h3></h3>
+					<span class="items"></span>
+					<span class="price"></span>
+				</div>   
+        </div>
+
+        <form action="" class="form">
+            <i class="fa fa-users" aria-hidden="true"><span>ACCOUNT</span></i>
+            <a href="login.html" class="btn-form">LOGIN</a>
+            <a href="signup.html" class="btn-form">SIGN UP</a>
+        </form>
+
+    </header>
+
+    <div class="container">
+        <img src="../images/product-ampalaya.png" alt="ampalaya" class="product-image">
+        <div class="product-details">
+            <h1 class="product-name">Bitter Gourd <span>(Ampalaya)</span></h1>
+            <p class="product-description">Ampalaya is a climbing vine, nearly or quite smooth, annual vine. Tendrils are simple,<br> up to 20 centimeters long. Leaves are 2.5 to 10 centimeters in diameter, cut nearly to <br>the base into 5 to 7 lobes, oblong-ovate, variously toothed, and heart-shaped at the base.</p>
+            <p class="product-price">₱100 per Kilo</p>
+            <p class="product-discount">53% OFF</p>
+      
+            <div class="quantity-container">
+                <span class="quantity-label">Quantity:</span>
+                <input type="number" min="1" value="1" class="quantity-input">
+            </div>
+      
+            <div class="buttons">
+                <button class="add-to-cart"><i class="fa fa-shopping-cart" aria-hidden="true"></i> Add to Cart</button>
+                <button class="button buy-now">Buy Now</button>
+            </div>
+
+        </div>
+    </div>
+
+    <section class="selection" id="selection"> 
+        <div class="product-selection">
+            <h1>Also you <span>want</span></h1>
+            <a href="reployo.html">
+                <div class="selection box">
+                    <img src="../images/product2-repolyo.png" alt="">
+                    <h3>Repolyo</h3>
+                    <div class="price"> ₱120 per kilo </div>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>   
+                </div>
+            </a>
+
+            <a href="talong.html">
+                <div class="selection box">
+                    <img src="../images/product4-talong.png" alt="">
+                    <h3>Talong</h3>
+                    <div class="price"> ₱110 per kilo </div>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                </div>
+            </a>
+
+            <a href="sayote.html">
+                <div class="selection box">
+                    <img src="../images/product3-sayote.png" id="sayote" alt="">
+                    <h3>Sayote</h3>
+                    <div class="price"> ₱80 per kilo </div>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                </div>
+            </a>
+        </div>
+    </section>
+    
+    <section class="selection" id="selection">
+        <div class="product-selection">
+            <a href="okra.html">
+                <div class="selection box">
+                    <img src="../images/product6-okra.png" id="okra" alt="">
+                    <h3>Okra</h3>
+                    <div class="price"> ₱15 per bugkos </div>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                </div>
+            </a>
+
+            <a href="patola.html">
+                <div class="selection box">
+                    <img src="../images/product7-patola.png" id="patola" alt="">
+                    <h3>Patola</h3>
+                    <div class="price"> ₱60 per kilo </div>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                </div>
+            </a>
+
+            <a href="kalabasa.html">
+                <div class="selection box">
+                    <img src="../images/product8-kalabasa.png" id="kalabasa" alt="">
+                    <h3>Kalabasa</h3>
+                    <div class="price"> ₱120 per kilo </div>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                </div>
+            </a>
+        </div>
+    </section>
+
+    <section class="footer">
+        <div class="box-container">
+            <div class="box">
+                <h3>Boboy's Fruits & Vegetables<i class="fa-solid fa-shop"></i></h3>
+                <p>©Boboy's Online Shop</p>
+            </div>
+
+            <div class="box">
+                <h3>contact info</h3>
+                <a href="#" class="links"><i class="fas fa-phone"></i>+639302641807</a>
+                <a href="#" class="links"><i class="fas fa-envelope"></i>emytimuat123@gmail.com</a>
+                <a href="#" class="links"><i class="fas fa-map-marker-alt"> virac</i>emytimuat123@gmail.com</a>
+            </div>
+
+            <div class="box">
+                <h3>follow us</h3>
+                <div class="follow">
+                    <a href="#"><i class="fab fa-facebook-square" aria-hidden="true"> <span>Facebook</span></i></a>
+                    <a href="#"><i class="fab fa-twitter" aria-hidden="true"> <span> X</span></i></a>
+                    <a href="#"><i class="fab fa-instagram"> <span>Instagram</span></i></a>
+                </div>       
+            </div>
+
+
+            <div class="box">
+                <h3>newsletter</h3>
+                <p>subscribe for latest updates</p>
+                <input type="email" placeholder="please enter your emal" class="email">
+                <input type="submit" value="subscribe" class="btn">
+                <img src="images/ph-logo.png" class="ph-img">
+            </div>
+
+        </div>
+    </section>
+
+</body>
+<script src="../js/script.js"></script>
+</html>
